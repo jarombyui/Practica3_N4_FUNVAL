@@ -1,0 +1,119 @@
+.home-wrapper {
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url("../../assets/home/background-home-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right top;
+  position: relative;
+}
+.home-container {
+  max-width: 1110px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 12.8rem;
+}
+.home-text-container {
+  max-width: 540px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.home-caption {
+  font-size: 2.8rem;
+  font-weight: normal;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--blue-300);
+
+}
+.home-title {
+  font-size: 14.4rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 2.4rem 0;
+}
+.home-parag {
+  font-size: 1.8rem;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+  line-height: 1.8;
+}
+
+.home-link {
+  font-size: 3.2rem;
+  font-family: "Bellefair", serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: var(--blue-900);
+  text-decoration: none;
+  width: 272px;
+  height: 272px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  cursor: pointer;
+  position: relative;
+}
+.home-link::before {
+  content: "";
+  width: 372px;
+  height: 372px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+}
+.home-link:hover:before{
+  opacity: .3;
+  transition: opacity .25s ease-in;
+
+}
+@media (width <= 1160px) {
+  .home-wrapper {
+    background-image: url("../../assets/home/background-home-tablet.jpg");
+    background-size: cover;
+    background-position: bottom;
+  }
+  .home-container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+    position: relative;
+    margin-top: 22.4rem;
+    margin-bottom: 12.8rem;
+    bottom: 0;
+
+  }
+  .home-text-container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .home-title {
+    font-size: clamp(9rem, 8vw, 14.4rem);
+  }
+  
+}
+@media (width <= 767px) {
+  .home-wrapper {
+    background-image: url("../../assets/home/background-home-mobile.jpg");
+    height: 100%;
+    padding: 0 2.4rem;
+  }
+  .home-caption{
+    font-size: 1.8rem;
+  
+  }
+}

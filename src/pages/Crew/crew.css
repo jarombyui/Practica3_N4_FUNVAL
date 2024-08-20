@@ -1,0 +1,160 @@
+.crew-wrapper {
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url("../../assets/crew/background-crew-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  overflow-x: hidden;
+}
+.crew-container {
+  margin-top: 9.6rem;
+  max-width: 1110px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.crew-caption {
+  font-size: 2.8rem;
+  font-weight: normal;
+  letter-spacing: 4px;
+  line-height: auto;
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  margin-top: 4rem;
+}
+.crew-num {
+  font-weight: bold;
+  color: #4e5059;
+  letter-spacing: 4.72px;
+}
+.crew-inner-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.crew-img {
+  width: 100%;
+}
+.crew-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 540px;
+  min-height: 734px;
+}
+.crew-info-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.crew-role {
+  font-size: 3.2rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 1.6rem 0;
+  color: #979797;
+}
+.crew-name {
+  font-size: 5.6rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 1.6rem 0;
+}
+.crew-parag {
+  max-width: 445px;
+  font-size: 1.8rem;
+  font-weight: normal;
+  line-height: 1.8;
+  color: var(--blue-300);
+  
+}
+.crew-links-container {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  position: absolute;
+  bottom: 3rem;
+}
+.crew-link {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: #979797;
+}
+.crew-link:hover {
+  background-color: white;
+}
+.crew-link.active {
+  background-color: white;
+}
+
+
+@media (width <= 1160px) {
+  .crew-wrapper {
+    background-image: url("../../assets/destination/background-destination-tablet.jpg");
+    background-size: 100%;
+    padding:  0 4rem ;
+    min-height: 100vh;
+  }
+  .crew-container{
+    margin-top: 12.6rem;
+  }
+  .crew-inner-container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+  }
+  .crew-text-container {
+    min-height: fit-content;
+    text-align: center;
+    margin-top: 4rem;
+  }
+  .crew-links-container {
+    justify-content: center;
+    position: relative;
+    bottom: 0;
+    margin-top: 4rem;
+
+  }
+  .crew-image-container{
+    max-width: 446.8px;
+    width: 100%;
+  }
+  .destination-info-container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .destination-title {
+    font-size: clamp(5rem, 8vw, 9.6rem);
+  }
+}
+@media (width <= 767px) {
+.crew-wrapper{
+  background-image: url("../../assets/crew/background-crew-mobile.jpg");
+  padding: 0 2rem;
+  text-align: center;
+}
+.crew-container{
+  align-items: center;
+}
+.crew-name{
+  font-size: clamp(2.4rem, 8vw,3.5rem);
+}
+.crew-role{
+  font-size: clamp(1.8rem, 8vw,2rem);
+}
+.crew-image-container{
+  max-width: 271.24px;
+  height: auto;
+}
+}
